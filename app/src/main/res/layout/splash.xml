@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"
+            android:src="@mipmap/logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/iv_logo"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_firstline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIND PEOPLE LIKE YOU. "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPink"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_firstline"
+                android:layout_centerHorizontal="true"
+                android:text="ALL AROUND YOU."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPink" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lodingIndicator"
+        android:background="@color/secondary_text"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView.Large"
+            android:visibility="visible"
+            app:indicatorName="BallPulseIndicator"
+            app:indicatorColor="@color/colorAccent"
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

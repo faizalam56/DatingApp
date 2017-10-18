@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:id="@+id/idSentRLayout"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/idSentLLayout"
+        android:background="@drawable/shape_bg_outgoing_bubble"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="32dp"
+        android:paddingBottom="4dp"
+
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idSentFLayout"
+            >
+            <ImageView
+                android:id="@+id/idSentProgress"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/ivxvImageSent"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvMessageSent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:text="dgsfgsdkgks"
+            android:textColor="@android:color/white"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:id="@+id/tvDateSent"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:text="cjsdgfj"
+            android:textSize="10dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="CardViewStyle" parent="android:Widget.TextView">
+        <item name="android:foreground">@drawable/selector_bg_card</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <!--<style name="DialogAnimation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/slide_out_down</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; Animation for dialog box &ndash;&gt;-->
+    <!--<style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">-->
+        <!--<item name="android:windowAnimationStyle">@style/DialogAnimation</item>-->
+    <!--</style>-->
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/colorAccent</item>
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@color/colorEditBox</item>
+
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please Wait</item>
+        <item name="DialogSpotColor">@android:color/holo_red_dark</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    //
+    STYLE
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--   <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+       <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/input_register</item>
+        <item name="android:textSize">17sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="colorControlNormal">@color/Color Name</item>-->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+
+    //ATTACHMENT
+    <style name="MatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BorderlessImageButtonStyle" parent="WrapContent">
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/padding_common</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="WeightWidth">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="HorizontalDividerStyle" parent="MatchWidth">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <style name="CenterProgressBarStyle" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="myDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/myDialogTitle</item>
+    </style>
+    <style name="myDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>

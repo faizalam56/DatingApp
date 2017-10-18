@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:id="@+id/ll_uper_images"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:id="@+id/lay_frame_big"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profile_pic" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right|top"
+                            android:src="@mipmap/cross_white" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:id="@+id/lay_frame_small_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView_small1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profile_pic" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right|top"
+                            android:src="@mipmap/cross_white" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/lay_frame_small_2"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/imageView_small2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profile_pic" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right|top"
+                            android:src="@mipmap/cross_white" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/ll_lower_images"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_below="@+id/ll_uper_images"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <FrameLayout
+                    android:id="@+id/lay_frame_pic_1"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_pic1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@mipmap/add_img"
+                        android:scaleType="centerCrop">
+
+                        <!--<ImageView-->
+
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:src="@mipmap/plus" />-->
+                    </ImageView>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/lay_frame_pic_2"
+                    android:paddingLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_pic2"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:layout_weight="1"
+                        android:background="@mipmap/add_img"
+
+                        android:scaleType="centerCrop">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:src="@mipmap/plus" />-->
+                    </ImageView>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/lay_frame_pic_3"
+                    android:paddingLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_pic3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@mipmap/add_img"
+                        android:scaleType="centerCrop">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:src="@mipmap/plus" />-->
+                    </ImageView>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_lower_images"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="First Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="First Name"
+                        android:padding="10dp"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_date_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Date of Birth"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/picker_date_of_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="Date Of Birth"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@mipmap/carret" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gender"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spnr_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:entries="@array/gender"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@mipmap/carret" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_my_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="My Work"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_my_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="My Work"
+                        android:padding="10dp"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_favourite_restaurants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Favourite Restaurants/Bars"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_favourite_restaurants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="Favourite Restaurants/Bars"
+                        android:padding="10dp"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_best_vacation_spot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Best Vacation Spot"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_best_vacation_spot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="Best Vacation Spot"
+                        android:padding="10dp"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_most_recent_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Most Recent Song I Liked"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_most_recent_song"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="Most Recent Song I Liked"
+                        android:padding="10dp"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_personality_i_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Personality I Follow"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_personality_i_follow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="Personality I Follow"
+                        android:padding="10dp"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_i_love_my_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="I'd Love My Date To..."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_i_love_my_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorEditBox"
+                        android:hint="I'd Love My Date To..."
+                        android:padding="10dp"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/bgimage"
+                    android:text="Submit"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_find_match"
+            android:title="FIND A MATCH" />
+        <item
+            android:id="@+id/nav_chats"
+            android:title="CHAT HISTORY" />
+        <item
+            android:id="@+id/nav_edit_info"
+            android:title="EDIT INFO" />
+       <!-- <item
+            android:id="@+id/nav_notification"
+            android:title="NOTIFICATIONS"/>-->
+        <item
+            android:id="@+id/nav_settings"
+            android:title="SETTINGS" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="LOG OUT" />
+    </group>
+
+
+
+</menu>

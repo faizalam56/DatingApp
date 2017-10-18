@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="60dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPink" />
+
+            <TextView
+                android:id="@+id/tv_current_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <!--<EditText
+                    android:id="@+id/et_current_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:hint="Search Current Location"
+                    android:singleLine="true"
+                    android:padding="10dp" />-->
+                <!-- <AutoCompleteTextView
+                     android:id="@+id/et_current_location"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@color/colorEditBox"
+                     android:hint="Search Current Location"
+                     android:singleLine="true"
+                     android:padding="10dp" />-->
+                <com.across.senzec.datingapp.autocomplete.CustomAutoCompleteTextView
+                    android:id="@+id/auto_complete_tv_current_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:hint="Search Current Location"
+                    android:singleLine="true"
+                    android:padding="10dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_distance_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0 km"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@color/colorEditBox">
+
+                    <SeekBar
+                        android:id="@+id/seekbar_distance"
+                        android:layout_width="match_parent"
+                        android:thumb="@mipmap/white_spot"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:progress="1"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_age_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="20-25"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:padding="10dp">
+
+                    <SeekBar
+                        android:id="@+id/seekbar_age"
+                        android:layout_width="match_parent"
+                        android:thumb="@mipmap/white_spot"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:progress="5"
+
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Me"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+
+                android:layout_margin="0dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorEditBox"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_men"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Men" />
+
+                        <Switch
+                            android:id="@+id/switch_men"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Women" />
+
+                        <Switch
+                            android:id="@+id/switch_women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <TextView
+                android:id="@+id/tv_future_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Future Location"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <!--<EditText
+                    android:id="@+id/et_future_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:hint="Search Current Location"
+                    android:singleLine="true"
+                    android:padding="10dp" />-->
+                <com.across.senzec.datingapp.autocomplete.CustomAutoCompleteTextView
+                    android:id="@+id/auto_complete_tv_future_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:hint="Search Future Location"
+                    android:singleLine="true"
+                    android:padding="10dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_future_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Future Distance"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <LinearLayout
+                    android:id="@+id/rl_future_locaton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:orientation="vertical"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_distance_future_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Distance" />
+
+                        <TextView
+                            android:id="@+id/tv_distance_value_future"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0 km" />
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekbar_future_distance"
+                        android:padding="10dp"
+                        android:thumb="@mipmap/white_spot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="1"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time" />
+
+                        <TextView
+                            android:id="@+id/tv_time_in_days_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0 days" />
+                        <!--<TextView-->
+                        <!--android:id="@+id/tv_time_in_day"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/tv_time_in_days_value"-->
+                        <!--android:text=" days"/>-->
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekbar_time"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:thumb="@mipmap/white_spot"
+                        android:layout_height="wrap_content"
+                        android:progress="1"/>
+                    <TextView
+                        android:id="@+id/tv_startdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Start Date"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/picker_date_future_distance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorEditBox"
+                            android:hint="Start Date"
+                            android:padding="10dp" />
+                        <ImageView
+                            android:layout_width="30px"
+                            android:layout_height="35px"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@mipmap/carret"/>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/event_attending"
+                android:text="Event Attending"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp">
+
+                <Spinner
+                    android:id="@+id/spnr_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/eventnumber"
+                    android:background="@color/colorEditBox"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="35px"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@mipmap/carret"/>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Create Event"
+                    android:textColor="@color/colorBlack"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/tvText"
+                    android:background="@color/colorBlack"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tvText"
+                    android:background="@color/colorBlack"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <EditText
+                    android:id="@+id/et_event_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:hint="Event Name"
+                    android:singleLine="true"
+                    android:padding="10dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_event_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Location"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <!-- <EditText
+                     android:id="@+id/et_event_location"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@color/colorEditBox"
+                     android:hint="Event Location"
+                     android:singleLine="true"
+                     android:padding="10dp" />-->
+                <com.across.senzec.datingapp.autocomplete.CustomAutoCompleteTextView
+                    android:id="@+id/auto_complete_tv_event_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:hint="Search Event Location"
+                    android:singleLine="true"
+                    android:padding="10dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <TextView
+                    android:id="@+id/tv_event_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:hint="Start Date"
+                    android:padding="10dp" />
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="35px"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@mipmap/carret"/>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_public_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private/Public"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp">
+                <TextView
+                    android:id="@+id/tv_switch_public_private"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorEditBox"
+                    android:text="public"
+                    android:padding="10dp" />
+                <Switch
+                    android:id="@+id/switch_public_private"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    tools:targetApi="ice_cream_sandwich"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <!--<TextView-->
+            <!--android:id="@+id/create_an_account"-->
+            <!--android:text="Create An Account"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<EditText-->
+            <!--android:id="@+id/et_event"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@color/colorEditBox"-->
+            <!--android:hint="Name Your Event"/>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<EditText-->
+            <!--android:id="@+id/et_date"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@color/colorEditBox"-->
+            <!--android:drawableRight="@mipmap/spinner"-->
+            <!--android:hint="Date"/>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/search_people"-->
+            <!--android:text="Search Peole By Events You're Attending"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<EditText-->
+            <!--android:id="@+id/et_search_people"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@color/colorEditBox"-->
+            <!--android:hint="#RORO wedding,Grubfest etc"/>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <Button
+                    android:id="@+id/btn_submit_setting_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/bgimage"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <Button
+                    android:id="@+id/btn_delete_account"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@mipmap/delete_account"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

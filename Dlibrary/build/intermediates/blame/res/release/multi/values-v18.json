@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\power hashing\\Desktop\\sachin\\Demo Project\\DatingApp\\Dlibrary\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\power hashing\\.android\\build-cache\\dc1fa476f8b056aa24dcaf8fb74dff5914d105db\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+   <!-- <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.across.senzec.datingapp.utils.CircleImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/profile_pic"
+                        />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/display_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="sans-serif"
+                        android:text="Name"
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="sans-serif"
+                        android:text=", "
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:id="@+id/display_age_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="sans-serif"
+                        android:text="Age"
+                        android:textSize="22sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/user_distance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_text"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_text"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:text=" kms away"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="Comments shows Writen by this person"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--<ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile_pic"
+                android:layout_gravity="center"/>-->
+            <com.across.senzec.datingapp.utils.CircleImageView
+                android:id="@+id/civ_image"
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile_pic"/>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical">
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/display_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary_text"
+                            android:fontFamily="sans-serif"
+                            android:text="Name"
+                            android:textSize="22sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary_text"
+                            android:fontFamily="sans-serif"
+                            android:text=", "
+                            android:textSize="22sp"/>
+                        <TextView
+                            android:id="@+id/display_age_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary_text"
+                            android:fontFamily="sans-serif"
+                            android:text="Age"
+                            android:textSize="22sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/user_distance_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/secondary_text"
+                            android:fontFamily="sans-serif"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/secondary_text"
+                            android:fontFamily="sans-serif"
+                            android:textSize="16sp"
+                            android:text=" kms away"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/comments"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:text="Comments shows Writen by this person.Comments shows Writen by this person"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

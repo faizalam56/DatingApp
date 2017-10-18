@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.across.senzec.datingapp.fragments.SettingFragment"
+    tools:showIn="@layout/fragment_setting">
+
+    <!--tools:context="com.example.senzec.datingapp.testfolder.autocompleteapi.AutoCompleteActivity"
+    tools:showIn="@layout/activity_auto_complete">-->
+
+    <com.across.senzec.datingapp.fragments.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Enter Place Here"
+        android:background="@color/colorEditBox"
+        android:padding="10dp"/>
+
+</RelativeLayout>

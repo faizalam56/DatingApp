@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    android:background="@color/grey_200"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_find_match"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/idUserRecycleList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:layout_marginTop="16dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/lodingIndicator"
+            android:background="@color/secondary_text"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AVLoadingIndicatorView.Large"
+                android:visibility="visible"
+                app:indicatorName="BallPulseIndicator"
+                app:indicatorColor="@color/colorAccent"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_no_find_match"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/light_red"
+                android:textSize="20dp"
+                android:text="No matches found!"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

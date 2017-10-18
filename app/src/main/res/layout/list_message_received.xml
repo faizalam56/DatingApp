@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/idReceiveRLayout"
+    tools:context=".qbchat.ChatMessageActivity">
+
+    <TextView
+        android:id="@+id/txvUsuarioMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/idReceiveLLayout"
+        >
+
+        <com.across.senzec.datingapp.utils.CircleImageView
+            android:id="@+id/iv_recipient_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="0dp"
+            android:src="@drawable/ic_chat_user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/idReceiveLLayout1"
+            android:background="@drawable/shape_bg_incoming_bubble"
+            android:paddingLeft="32dp"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="4dp"
+            >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idReceiveFLayout"
+                >
+                <ImageView
+                    android:id="@+id/idRecieveProgress"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/ivxvImageReceived"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvMessageReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:textColor="@android:color/black"
+                android:text="dfjkgsdfjasdsfg"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                />
+            <TextView
+                android:id="@+id/tvDateReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="10dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:layout_gravity="right"
+                android:text="cgjkdsgckjzsmcxg"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

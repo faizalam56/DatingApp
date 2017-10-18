@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "632476711153",
+    "firebase_url": "https://across-fc98d.firebaseio.com",
+    "project_id": "across-fc98d",
+    "storage_bucket": "across-fc98d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632476711153:android:f16d2df5e91269cc",
+        "android_client_info": {
+          "package_name": "com.example.senzec.datingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632476711153-fb3ishe212r6tp2uaapn03234qc1a659.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZEGIZNRaimTIlSp9j-RCARWGPWCuf1YA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Across</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!--<string name="facebook_app_id">465452767141809</string>-->
+    <string name="facebook_app_id">1860366334291194</string>
+    <string name="fb_login_protocol_scheme">fb1860366334291194</string>
+
+
+    <string name="CLIENT_ID">1c0f6dfb4a9043e3ae2d41b3b14be812</string>
+    <string name="CLIENT_SECRET">d638f20373244b5ea4615a00c21ea187</string>
+    <string name="CALLBACK_URL">http://www.senzecit.com/</string>
+
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_instagram_gallery">Instagram Photos</string>
+    <string name="loading">Loading&#8230;</string>
+
+
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+
+    </array>
+
+    <array name="eventnumber">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+    </array>
+
+    <array name="topics">
+        <item>Health</item>
+        <item>Sports</item>
+        <item>Social</item>
+    </array>
+
+    //QBCHAT
+    <string name="title_activity_chats_dialogs">ChatsDialogsActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_chat_mensaje">ChatMensajeActivity</string>
+
+    //Buttons
+    <string name="btnLogeo">Log in</string>
+    <string name="btnRegistro">Register</string>
+    <string name="btnCrearChat">Create chat</string>
+    <string name="btnActualizarPerfil">Update Profile</string>
+    <string name="btnCancelar">Cancel</string>
+
+
+    //TextViews
+    <string name="txvLogin">USER LOGIN</string>
+    <string name="txvRegistro">USER REGISTRATION</string>
+    <string name="txvNoRegistrado">Its not registered? Register here.</string>
+    <string name="txvYaRegistrado">Already registered? Sign in here.</string>
+    <string name="txvNoCuenta">Do not have an account? Register here</string>
+    <string name="txvOlvido">Forgot your password?</string>
+    <string name="txvCambiaEmail">Change email:</string>
+    <string name="txvCambiaPass">Change Password:</string>
+    <string name="txvBorrar">Delete user:</string>
+    <string name="txvReinicioPass">RESET PASSWORD</string>
+    <string name="txvInstrucciones">Enter the email address you registered with, we will send you the instructions.</string>
+
+    //EditTexts
+    <string name="edtUsername">Enter your username</string>
+    <string name="edtPassword">Enter your password</string>
+    <string name="edtFullName">Enter your full name</string>
+    <string name="edtOldPass">Enter your old password</string>
+    <string name="edtNewPass">Enter your new password</string>
+    <string name="edtEmail">Enter your email</string>
+    <string name="edtTelefono">Enter your phone number</string>
+    <string name="edtEscribir">Enter the message ...</string>
+
+    //Descriptions
+    <string name="desIcono">Main icon</string>
+    <string name="desAvatar">Avatar icon</string>
+
+    //Menus
+    <string name="menu_borrar">Delete</string>
+    <string name="menu_actualizar">To update</string>
+    <string name="menu_LogOut">LogOut</string>
+    <string name="chat_dialog_menu_user">Profile</string>
+
+    //ATTACHMENTS
+    <string name="please_wait">Please wait…</string>
+
+    <string name="dlg_error">Error</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="dlg_loading">Loading…</string>
+    <string name="dlg_choose_image_from">Select photo from…</string>
+    <string name="dlg_retry">Retry</string>
+
+    <string name="init_configs_error">Initializing configs error</string>
+
+    <string name="no_internet_connection">No internet connection</string>
+
+    <string name="splash_app_version">v %s</string>
+
+    <string name="error_parsing_configs">Parsing sample\'s configs error</string>
+    <string name="chat_edit_text_hint">Enter message here...</string>
+    <string name="chat_send">Send</string>
+    <string name="reload_chat">&#xf021; Load Previous...</string>
+
+</resources>
